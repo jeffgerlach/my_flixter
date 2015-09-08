@@ -17,16 +17,26 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-#footer {
-  height: $footer-height;
-  color: white;
-  background-color: rgba(36, 32, 33, 0.9);
-  font-family: "Helvetica Neue", Helvetica;
-  padding: 10px, 0px;
-  margin-top: 30px;
+footer {
+  height:$footer-height;
+  color:white;
+  background-color: rgba(36,32,33,0.9);
+  font-family: "Helvetica Neue",Helvetica;
+  padding:10px 0px;
+  margin-top:30px;
 }
 
 #footer a {
-	color: white;
-	font-weight: 100;
+  color:white;
+  font-weight:100;
+}
+
+.Site {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+.Site-content {
+	flex: 1;
 }

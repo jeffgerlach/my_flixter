@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-<body>
+<body class="Site">
 
-	<div id="wrap">
+	<main class="Site-content">
 		<nav class="navbar navbar-inverse" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,17 +49,17 @@
 		<% end %>
 
 		<%= yield %>
-	</div>
+	</main>
 
 	<br class="clr" />
-	
-	<div id="footer">
-		<div class="container">
-			<b>Footer Here</b>
-			<br />
-			<%= link_to 'Link', '#' %>
-		</div>
-	</div>
+
+  <footer>
+    <div class="container">
+      <b>Footer Here</b>
+      <br />
+      <%= link_to 'Link', '#' %>
+    </div>
+  </footer>
 
 </body>
 </html>
