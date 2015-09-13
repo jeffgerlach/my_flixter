@@ -42,7 +42,7 @@ gem 'carrierwave'
 
 gem 'figaro'
 
-gem 'fog', '~> 1.34'
+gem 'carrierwave-aws'
 
 gem 'mini_magick'
 # Use ActiveModel has_secure_password
