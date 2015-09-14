@@ -8,7 +8,7 @@ class LessonsController < ApplicationController
 	private
 
 	def require_enrolled_for_current_course
-    if !current_user.enrolled_in?(current_lesson.section.course)
+    if !current_user.enrolled_in?(current_lesson.section.course) && (current_user != current_lesson.section.course.user)
       redirect_to course_path(current_lesson.section.course), :alert => 'You are not enrolled in this course! Please enroll to gain access to lessons.'
     end
   end
